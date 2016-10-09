@@ -1,0 +1,4 @@
+<!--index.wxml-->
+<view class="input">
+  <input bindinput="bindKeyInput" class="placeinput" placeholder="搜索全世界的好东西" placeholder-style="color:#999999" focus="{{focus}}" />
+</view>

@@ -1,0 +1,20 @@
+/**index.wxss**/
+.input {
+  margin-top: 10px;
+  height: 40px;
+  margin-left: 10px;
+  margin-right: 10px;
+  border-color: lightgray;
+  border-style:solid;
+  border-width: 1px;
+  border-radius:5px;
+}
+
+.placeinput {
+  height: 40px;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  background-color: white;
+  font: 10px;
+}
