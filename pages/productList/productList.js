@@ -30,7 +30,7 @@ Page({
     console.log(JSON.stringify(params))
 
     wx.request({
-      url: 'http://192.168.0.10:8090/v2.5/product/search',
+      url: 'http://api2.lightstao.com/v2.5/product/search',
       method: 'GET',
       data: {
         search_param: JSON.stringify(params),

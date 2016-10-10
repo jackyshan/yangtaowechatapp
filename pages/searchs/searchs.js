@@ -30,7 +30,7 @@ Page({
 
     var that = this
     wx.request({
-      url: 'http://192.168.0.10:8090/v2.2/app/searchkey',
+      url: 'http://api2.lightstao.com/v2.2/app/searchkey',
       method: 'GET',
       data: {
         key: value,
