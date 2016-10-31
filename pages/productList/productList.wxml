@@ -7,7 +7,7 @@
   <!--<scroll-view class="container_wrap" scroll-y="true" bindscrolltoupper="upper" bindscrolltolower="lower">-->
   <scroll-view class="container_wrap" scroll-y="true" bindscrolltolower="lower">
     <view class="listview">
-      <view class="thumbnail" wx:for="{{productArr}}">
+      <view bindtap="goToProductDetail" class="thumbnail" wx:for="{{productArr}}">
           <image class="product_image" mode="aspectFit" src="{{productArr[index].Image}}"></image>
           <text class="label_title">{{productArr[index].Title}}</text>
           <text class="label_price">¥{{productArr[index].RmbPrice}}</text>

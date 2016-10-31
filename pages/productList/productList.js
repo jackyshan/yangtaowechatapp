@@ -106,4 +106,11 @@ Page({
     })
   },
 
+  goToProductDetail:function(){
+    console.log('跳转详情')
+    wx.redirectTo({
+      url: '../index/index'
+    })
+  },
+
 })
