@@ -60,8 +60,8 @@
 }
 
 .country_name {
-    font-size:1px;
-    font-style:normal;
+    font-size: 60%;
+    font-style: normal;
     padding-left: 10rpx;
     color: #666666;
 }

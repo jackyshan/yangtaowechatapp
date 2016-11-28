@@ -30,7 +30,7 @@ Page({
     console.log(JSON.stringify(params))
 
     wx.request({
-      url: 'http://api2.lightstao.com/v2.5/product/search',
+      url: 'https://api2.lightstao.com/v2.5/product/search',
       method: 'GET',
       data: {
         search_param: JSON.stringify(params),
@@ -108,8 +108,21 @@ Page({
 
   goToProductDetail:function(){
     console.log('跳转详情')
-    wx.redirectTo({
-      url: '../index/index'
+    // wx.redirectTo({
+    //   url: '../index/index'
+    // })
+    return
+    wx.navigateTo({
+      url: '../index/index',
+      success: function(res){
+        // success
+      },
+      fail: function() {
+        // fail
+      },
+      complete: function() {
+        // complete
+      }
     })
   },
 

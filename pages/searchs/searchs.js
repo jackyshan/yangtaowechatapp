@@ -29,21 +29,32 @@ Page({
     console.log(value)
 
     var that = this
+
     wx.request({
-      url: 'http://api2.lightstao.com/v2.2/app/searchkey',
-      method: 'GET',
+      url: 'https://api2.lightstao.com/v2.2/app/searchkey',
       data: {
         key: value,
-        y: ''
       },
+      method: 'GET', // OPTIONS, GET, HEAD, POST, PUT, DELETE, TRACE, CONNECT
+      // header: {}, // 设置请求的 header
       header: {
           'Content-Type': 'application/json'
       },
-      success: function(res) {
+      success: function(res){
+        // success
         console.log(Array.from(res.data.data))
         that.setData({
           rcmdArr:Array.from(res.data.data)
         })
+      },
+      fail: function(res) {
+        // fail
+        console.log('失败了')
+        console.log(res.errMsg)
+      },
+      complete: function() {
+        // complete
+        console.log('结束了')
       }
     })
     

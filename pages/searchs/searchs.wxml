@@ -3,7 +3,7 @@
   <input bindinput="bindKeyInput" class="placeinput" placeholder="搜索全世界的好东西" placeholder-style="color:#999999" focus="{{focus}}" />
 </view>
 <view class="log-list">
-  <block wx:for="{{rcmdArr}}" wx:for-item="rcmdName">
+  <block wx:for="{{rcmdArr}}" wx:key="searchs" wx:for-item="rcmdName">
     <label  class="log-item" bindtap="goToPList" id="{{rcmdName}}" >{{rcmdName}}</label>
     <view class="view_list log-item"></view>
   </block>
